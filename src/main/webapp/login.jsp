@@ -42,7 +42,8 @@
         <br>
         <input class="form-control" type="text" name="username" placeholder="username">
         <input class="form-control" type="password" name="password" placeholder="password">
-        <h6 style="color: red"> <%=error%></h6>
+        <h6 style="color: red"><%=error%>
+        </h6>
         <input type="submit" class="btn btn-primary" value="Login">
     </form>
 </div>

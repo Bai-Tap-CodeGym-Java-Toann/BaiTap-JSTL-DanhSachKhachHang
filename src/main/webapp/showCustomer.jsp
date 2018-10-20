@@ -32,7 +32,8 @@
                 <p><c:out value="${customer.getBirthday()}"></c:out></p>
                 <p><c:out value="${customer.getAddress()}"></c:out></p>
                 <p class='avatar'>
-                    <img src="<c:out value="${customer.getPictureLink()}"></c:out>"></p>
+                    <img src="<c:out value="${customer.getPictureLink()}"></c:out>">
+                </p>
             </li>
         </c:forEach>
 
