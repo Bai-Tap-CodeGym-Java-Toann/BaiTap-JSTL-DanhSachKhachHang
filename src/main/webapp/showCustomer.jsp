@@ -11,16 +11,34 @@
 <html>
 <head>
     <title>ShowCustomer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<%
-    Customer[] customers = (Customer[]) request.getAttribute("customers");
-%>
 <h1 align="center">Welcome ToanDz</h1>
-<c:forEach items="${customers}" var="customer">
-    <c:out value="${customer.name}">
-    </c:out>
-</c:forEach>
+<div>
+    <br>
+    <ul class="list-group">
+        <li class="list-group-item active">
+            <p>Tên</p>
+            <p>Ngày sinh</p>
+            <p>Địa chỉ</p>
+            <p>Ảnh đại diện</p>
+        </li>
+        <c:forEach items="${customers}" var="customer">
+            <li class='list-group-item'>
+                <p><c:out value="${customer.getName()}"></c:out></p>
+                <p><c:out value="${customer.getBirthday()}"></c:out></p>
+                <p><c:out value="${customer.getAddress()}"></c:out></p>
+                <p class='avatar'>
+                    <img src="<c:out value="${customer.getPictureLink()}"></c:out>"></p>
+            </li>
+        </c:forEach>
+
+    </ul>
+</div>
+
 
 </body>
 </html>

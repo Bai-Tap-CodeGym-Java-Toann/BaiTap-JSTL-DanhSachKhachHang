@@ -3,36 +3,36 @@ package CustomerFake;
 public class Customer {
     private String name = "";
     private int age = 0;
-    private String PictureLink = "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_1280.png";
+    private String PictureLink = "img/default.png";
     private String Address = "";
-    private String birtday = "";
+    private String birthday = "";
 
-    public Customer(String name, String address, String birtday) {
+    public Customer(String name, String address, String birthday) {
         this.name = name;
         Address = address;
-        this.birtday = birtday;
+        this.birthday = birthday;
     }
 
-    public Customer(String name, int age, String address, String birtday) {
+    public Customer(String name, int age, String address, String birthday) {
         this.name = name;
         this.age = age;
         Address = address;
-        this.birtday = birtday;
+        this.birthday = birthday;
     }
 
-    public Customer(String name, String pictureLink, String address, String birtday) {
+    public Customer(String name, String pictureLink, String address, String birthday) {
         this.name = name;
         PictureLink = pictureLink;
         Address = address;
-        this.birtday = birtday;
+        this.birthday = birthday;
     }
 
-    public Customer(String name, int age, String pictureLink, String address, String birtday) {
+    public Customer(String name, int age, String pictureLink, String address, String birthday) {
         this.name = name;
         this.age = age;
         PictureLink = pictureLink;
         Address = address;
-        this.birtday = birtday;
+        this.birthday = birthday;
     }
 
     public String getName() {
@@ -59,8 +59,8 @@ public class Customer {
         Address = address;
     }
 
-    public void setBirtday(String birtday) {
-        this.birtday = birtday;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getPictureLink() {
@@ -71,7 +71,7 @@ public class Customer {
         return Address;
     }
 
-    public String getBirtday() {
-        return birtday;
+    public String getBirthday() {
+        return birthday;
     }
 }
